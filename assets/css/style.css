@@ -1,0 +1,215 @@
+#profile-pic{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.fa {
+    /* padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center; */
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .material-icons{
+    opacity: 0.7;
+  }
+
+  .navbar{
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  #projectPic{
+      float: left;
+  }
+
+  .top-buffer { margin-top:20px; }
+
+  /* .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: aquamarine;
+} */
+
+
+
+#project-shadow{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+.nav-link-color{
+  color: rgba(0, 204, 255, 0.342);
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #fff;
+  background-color: rgba(0, 204, 255, 0.342);
+}
+
+body { padding-top: 50px; }
+
+
+/* .project-info {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-info:hover .image {
+  opacity: 0.3;
+}
+
+.project-info:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+} */
+
+
+.project-info{
+  position: relative;
+  width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* background-color: #343a40; */
+  background-color: white;
+  color: black;
+}
+
+.project-info:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; padding: 0 4px;
+}
+
+.project-column{
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 33.3333333333333%;
+  padding: 0 4px;
+}
+
+.project-column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#devicon{
+  width: 50px;
+  height: auto;
+}
+
+@media screen and (max-width: 990px){
+  .project-column{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .project-column{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .jumbotron {
+    height: 50px;
+  }
+}
+
+.jumbotron {
+  background-image: url("../images/Profile/picography-laptop-iphone-coffee-notebook.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 650px;
+  line-height: 650px;
+  opacity: 0.7;
+}
+
+.jumboColor {
+  color: black;
+  opacity: 1.0;
+}
+
+#myBio{
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+.center div{
+  line-height: 1.5;
+  vertical-align: center;
+  display: inline-block;
+}
